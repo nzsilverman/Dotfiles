@@ -39,5 +39,5 @@ set cindent "Stricter rules for c programs
 " Add a blank line below by pressing <Enter>
 map <Enter> o<ESC>
 
-" Copy to system clipboard
-set clipboard=unnamedplus
+" Synchronize clipboard with vim register
+set clipboard^=unnamed
