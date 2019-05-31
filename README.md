@@ -72,7 +72,6 @@ You're done, from now on you can now type config commands to add and update your
 
 ### For completeness this is what I ended up with (tested on many freshly minted Alpine Linux containers to test it out):
 ```
-ly minted Alpine Linux containers to test it out):
 
 git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
 function config {
