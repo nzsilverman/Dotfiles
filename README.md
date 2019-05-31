@@ -27,6 +27,10 @@ echo ".cfg" >> .gitignore
 ```
 
 ### Now clone your dotfiles into a bare repository in a "dot" folder of your $HOME:
+```
+git clone --bare <git-repo-url> $HOME/.cfg
+```
+Define the alias in the current shell scope:
 
 ```
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
