@@ -13,9 +13,6 @@ set encoding=utf-8
 
 set showcmd             " show command in bottom bar
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
 
@@ -42,3 +39,5 @@ set cindent "Stricter rules for c programs
 " Add a blank line below by pressing <Enter>
 map <Enter> o<ESC>
 
+" Copy to system clipboard
+set clipboard=unnamedplus
