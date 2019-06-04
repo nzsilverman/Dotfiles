@@ -41,3 +41,28 @@ map <Enter> o<ESC>
 
 " Synchronize clipboard with vim register
 set clipboard^=unnamed
+
+"------------------------------------------------------------ 
+" PLUGINS
+"------------------------------------------------------------
+
+" Automatic installation of vim-plug
+" https://github.com/junegunn/vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Install https://github.com/pangloss/vim-javascript
+Plug 'pangloss/vim-javascript'
+
+" Configuration variables for working with java script
+let g:javascript_plugin_jsdoc = 1 " Enables syntax highlighting for JSDocs
+let g:javascript_plugin_ngdoc = 1 " Enables some additonal syntax highlighting for NGDocs
+let g:javascript_plugin_flow = 1 " Enables syntax highlighting for Flow
