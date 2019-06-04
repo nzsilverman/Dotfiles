@@ -42,6 +42,9 @@ map <Enter> o<ESC>
 " Synchronize clipboard with vim register
 set clipboard^=unnamed
 
+" Allow different space mappings for different file types
+filetype plugin indent on
+
 "------------------------------------------------------------ 
 " PLUGINS
 "------------------------------------------------------------
@@ -63,6 +66,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
 
 " Configuration variables for working with java script
-let g:javascript_plugin_jsdoc = 1 " Enables syntax highlighting for JSDocs
-let g:javascript_plugin_ngdoc = 1 " Enables some additonal syntax highlighting for NGDocs
-let g:javascript_plugin_flow = 1 " Enables syntax highlighting for Flow
+" let g:javascript_plugin_jsdoc = 1 " Enables syntax highlighting for JSDocs
+" let g:javascript_plugin_ngdoc = 1 " Enables some additonal syntax highlighting for NGDocs
+" let g:javascript_plugin_flow = 1 " Enables syntax highlighting for Flow
+
+" Install React JSX syntax highlighting, from: https://github.com/mxw/vim-jsx
+Plug 'mxw/vim-jsx'
+
+" Install vim pretty for jsx
+" Plug 'maxmellon/vim-jsx-pretty'
+
+call plug#end()
