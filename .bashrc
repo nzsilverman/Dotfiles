@@ -9,6 +9,7 @@ alias weather3='curl http://wttr.in/ann_arbor?Tn | less'
 alias e='emacs'
 alias gs='git status'
 alias open='xdg-open' # open in users prefered application
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Create support for git prompts: https://github.com/magicmonty/bash-git-prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
@@ -133,4 +134,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias config='/usr/bin/git --git-dir=/home/nzsilverman/.cfg/ --work-tree=/home/nzsilverman'
+
+# Update Path to point to docker scripts
+export PATH=~/fast-wanderer/Docker/fwdocker/:$PATH
