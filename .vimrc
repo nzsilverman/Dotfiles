@@ -77,3 +77,7 @@ Plug 'mxw/vim-jsx'
 " Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
+
+
+" Consistently see filename 
+set laststatus=2
