@@ -135,5 +135,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Update Path to point to docker scripts
-export PATH=~/fast-wanderer/Docker/fwdocker/:$PATH
