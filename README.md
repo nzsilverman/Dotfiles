@@ -93,3 +93,6 @@ config checkout
 config config status.showUntrackedFiles no
 ```
 
+
+# Refactor Notes
+- Need to add a deploy key for systems that you only want them to have access to the dotfiles repo
